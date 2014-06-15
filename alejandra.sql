@@ -96,3 +96,10 @@ drop table if exists tax2001_sales;
 create table tax2001_sales (parid varchar, transno varchar, saledt timestamp, price numeric, saletype varchar, 
 saleval varchar, note1 varchar, note2 varchar, steb varchar, numpars numeric);
 \copy tax2001_sales from '/mnt/data/memphis/Assessor/2001/SALES.txt' delimiter ',' csv header;
+
+
+--Sales
+
+create table tax2002_sales (parid varchar, transno varchar, saledt timestamp, price numeric, saletype varchar, 
+saleval varchar, note1 varchar, note2 varchar, steb varchar, numpars numeric);
+\copy tax2001_sales from '/mnt/data/memphis/Assessor/2001/SALES.txt' delimiter ',' csv header;
